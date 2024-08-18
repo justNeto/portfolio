@@ -1,7 +1,5 @@
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import '../assets/styles/homepage.css';
-import linkedin_logo from '../assets/images/linkedin_logo.png';
-import github_logo from '../assets/images/github_logo.png';
 import profile_picture from '../assets/images/profile_picture.png';
 import { useEffect, useRef } from 'react';
 

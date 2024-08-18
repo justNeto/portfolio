@@ -137,7 +137,7 @@
     width: 25rem;
     height: 25rem;
     transition: 1s;
-    animation: zoomIn 0.5s ease forwards, floatImage 4s ease-in-out infinite;
+    animation: zoomIn 0.5s ease forwards, floatBottom 4s ease-in-out infinite;
     animation-delay: 1.8s, 2.3s;
     opacity: 0;
   }
@@ -195,17 +195,5 @@
     100% {
         transform: scale(1);
         opacity: 1;
-    }
-}
-
-@keyframes floatImage {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-24px);
-    }
-    100% {
-        transform: translateY(0);
     }
 }

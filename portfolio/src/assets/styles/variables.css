@@ -3,6 +3,7 @@
     --secondary-color: #2ecc71;
     --accent-color: #ADBDFF;
     --background-color: #212529;
+    --alternate-background: #2E3338;
     --text-color: #F4F4F9;
 }
 
@@ -11,3 +12,28 @@ body {
     background-color: var(--background-color)!important;
     color: var(--text-color)!important;
   }
+
+/*******************KEYFRAME ANIMATIONS**********************/
+@keyframes floatTop {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(24px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatBottom {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-24px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
