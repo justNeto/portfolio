@@ -1,0 +1,211 @@
+.home-page {
+    min-height: 90vh!important;
+}
+
+.profile-info-text {
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.profile-info-text > h1{
+    font-weight: 800;
+    font-size: 2.7rem;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .7s;
+    margin-bottom: 0.5rem;
+    opacity: 0;
+}
+
+.profile-info-text > h3{
+    font-weight: 600;
+    font-size: 1.5rem;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+    opacity: 0;
+}
+
+.profile-info-text  h3:nth-of-type(2){
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.profile-info-text  h3 span{
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.profile-info-text > p{
+    font-weight: 300;
+    text-align: justify;
+    margin-top: 1.5rem;
+    font-size: 0.97rem;
+    margin-bottom: 2rem;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: .7s;
+    opacity: 0;
+}
+
+.contact-buttons {
+    gap: 2rem;
+}
+
+.contact-button-l{
+    color: var(--text-color)!important;
+    font-size: 1rem!important;
+    width: 9rem!important;
+    margin-left: 0.5rem;
+    background-color: var(--primary-color)!important;
+    border-color:  var(--primary-color)!important;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 1.1s;
+    opacity: 0;
+}
+
+.contact-button-l:hover{
+    background-color: var(--primary-color)!important;
+    color: var(--text-color)!important;
+    box-shadow: 0 0 20px var(--primary-color);
+}
+
+.contact-button-g{
+    width: 9rem!important;
+    color: var(--primary-color)!important;
+    font-size: 1rem!important;
+    border-color:  var(--primary-color)!important;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 1.4s;
+    opacity: 0;
+}
+
+.contact-button-g:hover{
+    background-color: var(--primary-color)!important;
+    color: var(--text-color)!important;
+    box-shadow: 0 0 20px var(--primary-color);
+}
+
+.social-media {
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.social-media-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    max-width: 100%;
+    margin-bottom: 2rem;
+}
+
+.social-media-row  a {
+    display: inline-flex;
+    width: 2.7rem;
+    height: 2.7rem;
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    font-size: 1.9rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: calc(1.5s + var(--j) * 0.2s);
+    opacity: 0
+}
+
+.social-media-row a:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    box-shadow: 0 0 20px var(--primary-color);
+}
+
+.profile-pic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture img {
+    width: 25rem;
+    height: 25rem;
+    transition: 1s;
+    animation: zoomIn 0.5s ease forwards, floatImage 4s ease-in-out infinite;
+    animation-delay: 1.8s, 2.3s;
+    opacity: 0;
+  }
+
+/* Animations */
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-24px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

@@ -2,6 +2,10 @@
 .navbar .navbar-link {
     color: var(--text-color) !important; /* Default color for inactive links */
     text-decoration: none !important;
+    transition: .3s;
+    animation: slideTop .5S ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    opacity: 0;
 }
 
 /* Hovered link */
@@ -17,6 +21,7 @@
 /* For the navbar brand (logo) */
 .navbar .navbar-logo {
     height: 2.5rem !important;
+    animation: slideRight 1s ease forwards;
 }
 
 /* Align logo to the left and links to the right */
@@ -78,5 +83,28 @@
         display: flex !important;
         justify-content: flex-start !important;
         gap: 0.3rem !important; /* Adds spacing between the links */
+    }
+}
+
+/* Animations */
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
 }

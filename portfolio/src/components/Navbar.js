@@ -23,20 +23,36 @@ function NavbarComponent() {
                 <Navbar.Toggle aria-controls='basic-navbar-bar' />
                 <Navbar.Collapse id='basic-navbar-bar'>
                     <Nav className="navbar-nav">
-                        <Nav.Link as={NavLink} to='/' className='navbar-link' exact>
+                        <Nav.Link 
+                            as={NavLink} 
+                            to='/' 
+                            className='navbar-link' 
+                            style={{ '--i': 1 }}>
                             Home
                         </Nav.Link>
-                        <Nav.Link as={NavLink} to='/about' className='navbar-link'>
+                        <Nav.Link 
+                            as={NavLink} 
+                            to='/about' 
+                            className='navbar-link' 
+                            style={{ '--i': 2 }}>
                             About me
                         </Nav.Link>
-                        <Nav.Link as={NavLink} to='/portfolio' className='navbar-link'>
+                        <Nav.Link 
+                            as={NavLink} 
+                            to='/portfolio' 
+                            className='navbar-link' 
+                            style={{ '--i': 3 }}>
                             Portfolio
                         </Nav.Link>
-                        <Nav.Link as={NavLink} to='/contact' className='navbar-link'>
+                        <Nav.Link 
+                            as={NavLink} 
+                            to='/contact' 
+                            className='navbar-link' 
+                            style={{ '--i': 4 }}>
                             Contact
                         </Nav.Link>
                     </Nav>
-                </Navbar.Collapse>
+            </Navbar.Collapse>
             </Container>
         </Navbar>
     );
