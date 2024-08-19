@@ -1,0 +1,73 @@
+[
+    {
+      "title": "Python",
+      "image": "python.png",
+      "description": "Python"
+    },
+    {
+        "title": "C++",
+        "image": "c++.png",
+        "description": "C++"
+    },
+    {
+      "title": "JavaScript",
+      "image": "javascript.png",
+      "description": "JavaScript"
+    },
+    {
+      "title": "React",
+      "image": "react.png",
+      "description": "React"
+    },
+    {
+        "title": "HTML",
+        "image": "html.png",
+        "description": "HTML"
+    },
+    {
+        "title": "CSS",
+        "image": "css.png",
+        "description": "CSS"
+    },
+    {
+        "title": "Git",
+        "image": "git.png",
+        "description": "Git"
+    },
+    {
+        "title": "MySQL",
+        "image": "mysql.png",
+        "description": "MySQL"
+    },
+    {
+        "title": "Pandas",
+        "image": "pandas.png",
+        "description": "Pandas"
+    },
+    {
+        "title": "Scikit-Learn",
+        "image": "scikit_learn.png",
+        "description": "Scikit-Learn"
+    },
+    {
+        "title": "PyTorch",
+        "image": "pytorch.png",
+        "description": "PyTorch"
+    },
+    {
+        "title": "MATLAB",
+        "image": "matlab.png",
+        "description": "MATLAB"
+    },
+    {
+        "title": "Flask",
+        "image": "flask.png",
+        "description": "Flask"
+    },
+    {
+        "title": "Plotly",
+        "image": "plotly.png",
+        "description": "Plotly"
+    }
+  ]
+  
