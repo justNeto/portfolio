@@ -39,16 +39,9 @@ function NavbarComponent() {
                         </Nav.Link>
                         <Nav.Link 
                             as={NavLink} 
-                            to='/portfolio' 
-                            className='navbar-link' 
-                            style={{ '--i': 3 }}>
-                            Portfolio
-                        </Nav.Link>
-                        <Nav.Link 
-                            as={NavLink} 
                             to='/contact' 
                             className='navbar-link' 
-                            style={{ '--i': 4 }}>
+                            style={{ '--i': 3 }}>
                             Contact
                         </Nav.Link>
                     </Nav>
