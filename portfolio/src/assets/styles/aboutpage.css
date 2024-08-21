@@ -1,6 +1,7 @@
 /****************** ABOUT ME SECTION **********************/
 .about-page {
-    min-height: 90vh!important;
+    min-height: 91vh!important;
+    overflow-x: hidden;
 }
 
 .about-page-text {
@@ -152,6 +153,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .skills {
@@ -271,16 +273,204 @@
 .timeline-title {
     font-weight: 900;
     font-size: 1.2rem;
+    text-align: left;
 }
 
 .timeline-subtitle {
     font-weight: 500;
     font-size: 1rem;
     color: var(--primary-color);
+    text-align: left;
+}
+
+.timeline-subtitle span {
+    text-align: right!important;
 }
 
 .timeline-text {
     font-weight: 300;
     font-size: 0.7rem;
     text-align: justify;
+}
+
+/****************** PROJECT SECTION  **********************/
+
+.projects-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vh!important;
+    gap: 0.5rem!important;
+    width: 80%!important;
+}
+
+.projects-header > h1, p {
+    text-align: center;
+}
+
+.projects-header > h1{
+    color: var(--primary-color);
+    font-weight: 800;
+    font-size: 2.7rem;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 2s;
+    opacity: 0;
+}
+
+.projects-header > h1 span{
+    color: var(--text-color);
+}
+
+.projects-header > p{
+    font-weight: 300;
+}
+
+.project-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    height: 40vh!important;
+}
+
+.project-card {
+    width: 15rem!important;
+    height: 15rem!important;
+    padding: 0!important;
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    background-color: #40474F!important;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-color: var(--background-color)!important;
+    text-decoration: none!important;
+    border-radius: 2%;
+}
+
+.project-card:hover {
+    box-shadow: 0 0 30px var(--primary-color);
+
+    .project-card-header {
+        height: 100%!important;
+        animation: slideTopCard 1s ease forwards;
+        border-radius: 2%;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .project-card-title {
+        color: var(--primary-color)!important;
+        text-align: center;
+        animation: slideRight 1s ease forwards;
+    }
+
+    .project-card-text {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        animation: slideRight 1s ease forwards;
+        white-space: normal; /* Allow text to wrap */
+        overflow: visible; /* Show overflow */
+        text-overflow: clip; /* Remove ellipsis */
+    }
+
+    .project-button{
+        animation: zoomIn 1s ease forwards;
+        animation-delay: 0.5s;
+    }
+}
+
+.project-card:not(:hover) {
+    .project-card-header {
+        animation: slideBottomCard 1s ease forwards;
+        height: 100%;
+    }
+
+    .project-card-title {
+        animation: slideLeft 1s ease forwards;
+    }
+
+    .project-card-text {
+        animation: slideLeft 1s ease forwards;
+    
+    }
+
+    .project-button{
+        display: none;
+        animation: slideLeft 1s ease forwards;
+    }
+}
+
+.project-card-body {
+    height: 100%!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.project-card-header {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(64, 71, 79, 0.85)!important; 
+    padding: 12px;
+    gap:1px!important;
+}
+
+.project-card-title {
+    color: var(--primary-color)!important;
+    font-weight: 800!important;
+    text-decoration: none!important;
+    font-size: 1.1rem;
+}
+
+.project-card-text {
+    color: var(--text-color)!important;
+    font-weight: 300!important;
+    font-size: 0.9rem;
+    text-decoration: none!important;
+    font-size: 0.7rem;
+    text-align: justify;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add ellipsis if text overflows */
+    transition: max-height 0.3s ease; /* Smooth transition */
+}
+
+.project-button{
+    color: var(--text-color)!important;
+    font-weight: 600!important;
+    font-size: 0.8rem!important;
+    width: 7rem!important;
+    background-color: var(--primary-color)!important;
+    border-color:  var(--primary-color)!important;
+    opacity: 0;
+}
+
+.project-button:hover{
+    box-shadow: 0 0 30px var(--primary-color);
+}
+
+.resume-button {
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    width: 80%!important;
+}
+
+.resume-button p {
+    font-weight: 300;
 }

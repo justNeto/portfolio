@@ -69,7 +69,7 @@ function SkillSection() {
             >
             <TimelineItem>
                 <TimelineOppositeContent color="secondary" className='timeline-year'  style={{ '--j': 2 }}>
-                   <h5 className='timeline-subtitle'>June 2024</h5>
+                   <h5 className='timeline-subtitle'><span>June 2024</span></h5>
                 </TimelineOppositeContent>
                 <TimelineSeparator color = 'secondary'  className='timeline-separator'  style={{ '--j': 1 }}>
                     <TimelineDot color = 'primary'  className='timeline-dot'  style={{ '--j': 1 }}/>
@@ -87,7 +87,7 @@ function SkillSection() {
             </TimelineItem>
             <TimelineItem>
                 <TimelineOppositeContent color="secondary" className='timeline-year'  style={{ '--j': 7 }}>
-                   <h5 className='timeline-subtitle'>May 2024</h5>
+                   <h5 className='timeline-subtitle'><span>May 2024</span></h5>
                 </TimelineOppositeContent>
                 <TimelineSeparator color = 'secondary' className='timeline-separator'  style={{ '--j': 6 }}>
                     <TimelineDot color = 'primary' className='timeline-dot'  style={{ '--j': 6 }}/>
@@ -105,7 +105,7 @@ function SkillSection() {
             </TimelineItem>
             <TimelineItem>
                 <TimelineOppositeContent color="secondary" className='timeline-year'  style={{ '--j': 12 }}>
-                   <h5 className='timeline-subtitle'>December 2023</h5>
+                   <h5 className='timeline-subtitle'><span>December 2023</span></h5>
                 </TimelineOppositeContent>
                 <TimelineSeparator color = 'secondary' className='timeline-separator'  style={{ '--j': 11 }}>
                     <TimelineDot color = 'primary' className='timeline-dot'  style={{ '--j': 11 }}/>

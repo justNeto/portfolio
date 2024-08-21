@@ -1,5 +1,9 @@
-import { AboutSection, SkillsSection } from './sections';
-import { Container, Row, Col } from 'react-bootstrap';
+import { AboutSection, 
+         SkillsSection, 
+         ProjectsSection } from './sections';
+import { Container, 
+         Row, 
+         Col } from 'react-bootstrap';
 import '../assets/styles/aboutpage.css';
 
 function AboutPage() {
@@ -13,6 +17,11 @@ function AboutPage() {
       {/* Skills and Education Section */}
       <div className='skills-section'>
       <SkillsSection></SkillsSection>
+      </div>
+
+      {/* Projects Section */}
+      <div className='projects-section'>
+        <ProjectsSection></ProjectsSection>
       </div>
 
     </>

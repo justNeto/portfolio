@@ -1,0 +1,58 @@
+[
+    {
+        "title": "Drive AI",
+        "shortDescription": "Car sales website made for NDS Cognitive Labs. The site is designed to connect car dealerships with end buyers throughout Mexico.",
+        "fullDescription": "Due to the large scope of the project, considering that it was developed in an academic environment, the best parts of the plans from three different projects, among them ProAuto, were taken and combined to form DriveAI. Even so, the overall scale of the project was still large, so the different sections of the system were divided into microservices, leaving me and my team in charge of the Documents-MS. \n Just like the planning phase, the project development \nwas carried out as a team effort, this time forming teams, each responsible for a specific microservice of the system. The development process was an enriching experience, as it allowed me to collaborate in a multidisciplinary environment, actively participating in the decision-making process to ensure the correct development of the system and compliance with NDS requirements.",
+        "bannerImage": "drive-ai.png",
+        "image2": "drive-ai.png",
+        "image3": "drive-ai.png",
+        "image4": "drive-ai.png",
+        "tags": ["Web Development", "Front-End", "Back-End", "Databases", "Project Management"],
+        "technologies": ["React", "Java SpringBoot", "MySQL", "AWS S3", "Vercel"],
+        "methodologies": ["Agile, Kanban, PSP, TSP"],
+        "user": "NDS Cognitive Labs",
+        "url": "/projects/drive-ai"
+    },
+    {
+        "title": "Another Project",
+        "shortDescription": "Brief description of another project.",
+        "fullDescription": "Detailed description of another project.",
+        "bannerImage": "drive-ai.png",
+        "image2": "/assets/images/another-project-image2.png",
+        "image3": "/assets/images/another-project-image3.png",
+        "image4": "/assets/images/another-project-image4.png",
+        "tags": ["AI", "Data Science"],
+        "technologies": ["Python", "TensorFlow"],
+        "developmentTime": "6 months",
+        "finishDate": "2024-08-01",
+        "url": "/projects/another-project"
+    },
+    {
+        "title": "Another Project",
+        "shortDescription": "Brief description of another project.",
+        "fullDescription": "Detailed description of another project.",
+        "bannerImage": "drive-ai.png",
+        "image2": "/assets/images/another-project-image2.png",
+        "image3": "/assets/images/another-project-image3.png",
+        "image4": "/assets/images/another-project-image4.png",
+        "tags": ["AI", "Data Science"],
+        "technologies": ["Python", "TensorFlow"],
+        "developmentTime": "6 months",
+        "finishDate": "2024-08-01",
+        "url": "/projects/another-project"
+    },
+    {
+        "title": "Another Project",
+        "shortDescription": "Brief description of another project.",
+        "fullDescription": "Detailed description of another project.",
+        "bannerImage": "drive-ai.png",
+        "image2": "/assets/images/another-project-image2.png",
+        "image3": "/assets/images/another-project-image3.png",
+        "image4": "/assets/images/another-project-image4.png",
+        "tags": ["AI", "Data Science"],
+        "technologies": ["Python", "TensorFlow"],
+        "developmentTime": "6 months",
+        "finishDate": "2024-08-01",
+        "url": "/projects/another-project"
+    }
+]
