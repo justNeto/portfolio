@@ -2,6 +2,10 @@
     min-height: 90vh!important;
 }
 
+.profile-info {
+    min-width: 55%!important;
+}
+
 .profile-info-text {
     height: 65%;
     display: flex;
@@ -142,58 +146,81 @@
     opacity: 0;
   }
 
-/* Animations */
-@keyframes slideRight {
-    0% {
-        transform: translateX(-100px);
-        opacity: 0;
+/******************************* MEDIA QUERIES *****************************/
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .home-page {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-left: 1rem!important;
+        margin-right: 1rem!important;
     }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
+    .picture img {
+        width: 11rem;
+        height: 11rem;
+        margin-top: 2rem;
+      }
+
+      .profile-info-text {
+        margin-top: 1rem;
+    }
+
+      .profile-info-text > h1{
+        font-weight: 800;
+        font-size: 1.7rem;
+    }
+
+    .profile-info-text > h3, .profile-info-text  h3 span{
+        font-size: 1.278rem;
+    }
+
+    .profile-info-text > p{
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        margin-bottom: 3rem;
+    }
+
+    .contact-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-buttons > * {
+        margin-left: 0;
+    }
+
+    .social-media {
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+        min-width: 100%!important;
+    }
+    
+    .social-media-row {
+        position: fixed;
+        bottom: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 3rem;
+        min-width: 100%;
     }
 }
 
-@keyframes slideLeft {
-    0% {
-        transform: translateX(100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+/* Small devices (phones, 576px and up) */
+@media (min-width: 576px) { 
+    /* Additional styles for small devices if needed */ 
 }
 
-@keyframes slideBottom {
-    0% {
-        transform: translateY(-100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    /* Additional styles for medium devices if needed */ 
 }
 
-@keyframes slideTop {
-    0% {
-        transform: translateY(100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes zoomIn {
-    0% {
-        transform: scale(0);
-        opacity: 0;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    /* Additional styles for large devices if needed */ 
 }

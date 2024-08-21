@@ -21,9 +21,9 @@ function HomePage() {
         typedInstanceRef.current = new window.Typed(typedElementRef.current, {
           strings: [
             'Software Engineer',
-            'AI Specialist',
-            'Data Science Specialist',
-            'Data Analytics Specialist'
+            'Machine Learning Engineer',
+            'Data Scientist',
+            'Data Analyst'
           ],
           typeSpeed: 100,
           backSpeed: 100,
@@ -82,7 +82,7 @@ function HomePage() {
             </Row>
           </Col>
         </Col>
-        <Col xs={5} className='profile-pic'>
+        <Col  className='profile-pic'>
           <div className='picture'>
             <img src={profile_picture} alt='Profile Picture'></img>
           </div>
