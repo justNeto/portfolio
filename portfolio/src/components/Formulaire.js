@@ -76,10 +76,31 @@ const Formulaire = () => {
     
     
     // Handle form submission
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         if (isValid) {
-            alert(`${formData.name}, thank you for contacting me.\nI'll get back to you as soon as possible!`);
+            try {
+                const response = await fetch('http://127.0.0.1:5000/submit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData),
+                });
+    
+                if (response.ok) {
+                    const result = await response.json();
+                    alert(`${formData.name}, thank you for contacting me.\nI'll get back to you as soon as possible!`);
+                    // You can also reset the form here if needed
+                    setFormData({ name: '', surname: '', email: '', phone: '', message: '' });
+                    setTouched({ name: false, surname: false, email: false, phone: false, message: false });
+                } else {
+                    alert('There was a problem submitting the form. Please try again later.');
+                }
+            } catch (error) {
+                console.error('Error submitting form:', error);
+                alert('There was a problem submitting the form. Please try again later.');
+            }
         }
     };
 
