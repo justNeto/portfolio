@@ -20,10 +20,10 @@ function HomePage() {
 
         typedInstanceRef.current = new window.Typed(typedElementRef.current, {
           strings: [
-            'Software Engineer',
-            'Machine Learning Engineer',
+            'Developer',
+            'AI Engineer',
             'Data Scientist',
-            'Data Analyst'
+            'Software Engineer'
           ],
           typeSpeed: 100,
           backSpeed: 100,
