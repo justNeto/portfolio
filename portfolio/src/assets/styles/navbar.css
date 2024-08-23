@@ -1,0 +1,110 @@
+/* Default link style */
+.navbar .navbar-link {
+    color: var(--text-color) !important; /* Default color for inactive links */
+    text-decoration: none !important;
+    transition: .3s;
+    animation: slideTop .5S ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    opacity: 0;
+}
+
+/* Hovered link */
+.navbar .navbar-link:hover {
+    color: var(--accent-color) !important; /* Color when hovered */
+}
+
+/* Active link */
+.navbar .navbar-link.active {
+    color: var(--primary-color) !important; /* Color for the active link */
+}
+
+/* For the navbar brand (logo) */
+.navbar .navbar-logo {
+    height: 2.5rem !important;
+    animation: slideRight 1s ease forwards;
+}
+
+/* Align logo to the left and links to the right */
+.navbar {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+.navbar-collapse  {
+    justify-content: flex-end !important;
+}
+
+.navbar-nav {
+    display: flex !important;
+    justify-content: flex-end !important;
+    gap: 3vw !important; /* Adds spacing between the links */
+}
+
+.navbar-toggler {
+    border: none !important; /* Remove border */
+    background: transparent !important; /* Remove background */
+}
+
+
+/* Small screens */
+@media (max-width: 992px) {
+    .navbar-collapse {
+        justify-content: flex-start !important; /* Aligns links to the left */
+    }
+
+    .navbar .navbar-logo {
+        height: 2.3rem !important;
+        margin: 0 auto;
+    }
+
+    .navbar-nav {
+        display: flex !important;
+        justify-content: flex-start !important;
+        gap: 0.3rem !important; /* Adds spacing between the links */
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        margin-left: 1rem;
+    }
+    
+    .navbar-collapse {
+        justify-content: flex-start !important; /* Aligns links to the left */
+    }
+
+    .navbar .navbar-logo {
+        height: 2.1rem !important;
+        margin: 0 auto;
+    }
+
+    .navbar-nav {
+        display: flex !important;
+        justify-content: flex-start !important;
+        gap: 0.3rem !important; /* Adds spacing between the links */
+    }
+}
+
+/* Animations */
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
