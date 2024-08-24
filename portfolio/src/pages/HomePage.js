@@ -64,19 +64,19 @@ function HomePage() {
             <h3>And I'm a <span ref={typedElementRef} className='multiple-text'></span></h3>
             <p>Software Development and Computer Technologies Specialist with solid experience in creating efficient and scalable technological solutions. Passionate about developing innovative projects that drive digital transformation in various industries.</p>
             <Row className='contact-buttons'>
-              <Button className='contact-button-l' variant="outline-secondary" size='sm'>Contact</Button>{' '}
+              <Button className='contact-button-l' variant="outline-secondary" size='sm' href = '/contact'>Contact</Button>{' '}
               <Button className='contact-button-g' variant="outline-secondary">Download CV</Button>{' '}
             </Row>
           </Col>
           <Col className='social-media'>
             <Row className='social-media-row'>
-              <a href='https://www.linkedin.com' style={{ '--j': 1 }}>
+              <a href='https://www.linkedin.com/in/augusto-aleman' style={{ '--j': 1 }}>
                 <i class='bx bxl-linkedin' ></i>
               </a>
-              <a href='https://www.github.com' style={{ '--j': 2 }}>
+              <a href='https://github.com/AugustoAleman' style={{ '--j': 2 }}>
                 <i class='bx bxl-github' ></i>
               </a>
-              <a href = 'https://www.facebook.com' style = {{'--j': 3}}>
+              <a href = 'https://www.facebook.com/octavio.aleman.3557' style = {{'--j': 3}}>
                 <i class='bx bxl-facebook' ></i>
               </a>
             </Row>

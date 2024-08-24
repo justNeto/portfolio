@@ -13,6 +13,10 @@ body {
     color: var(--text-color)!important;
   }
 
+  .router {
+    background-color: var(--background-color)!important;
+  }
+
 /*******************KEYFRAME ANIMATIONS**********************/
 @keyframes floatTop {
     0% {
@@ -110,5 +114,14 @@ body {
     100% {
         transform: translateY(10rem);
         border-radius: 0%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

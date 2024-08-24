@@ -5,7 +5,7 @@ import '../assets/styles/contactpage.css'
 function ContactPage() {
   const subject = "Contact";
   return (
-    <Container>
+    <Container className='parent-container'>
       <Row className='contact-page'>
         <Col className='contact-text'>
           <Col className='contact-description'>
