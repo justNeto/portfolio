@@ -213,7 +213,7 @@ const Formulaire = () => {
                     <Form.Floating className="mb-3">
                         <Form.Control
                             autocomplete="off"
-                            className='textfield-second'
+                            className='textfield-second-message'
                             as="textarea"
                             id="floatingMessage"
                             name="message"
