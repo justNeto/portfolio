@@ -80,7 +80,8 @@ const Formulaire = () => {
         e.preventDefault();
         if (isValid) {
             try {
-                const response = await fetch('http://127.0.0.1:5000/submit', {
+                console.log(`${process.env.REACT_APP_API_URL}/submit`);
+                const response = await fetch(`${process.env.REACT_APP_API_URL}/submit`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -96,10 +97,16 @@ const Formulaire = () => {
                     setTouched({ name: false, surname: false, email: false, phone: false, message: false });
                 } else {
                     alert('There was a problem submitting the form. Please try again later.');
+                    // You can also reset the form here if needed
+                    setFormData({ name: '', surname: '', email: '', phone: '', message: '' });
+                    setTouched({ name: false, surname: false, email: false, phone: false, message: false });
                 }
             } catch (error) {
                 console.error('Error submitting form:', error);
                 alert('There was a problem submitting the form. Please try again later.');
+                // You can also reset the form here if needed
+                setFormData({ name: '', surname: '', email: '', phone: '', message: '' });
+                setTouched({ name: false, surname: false, email: false, phone: false, message: false });
             }
         }
     };
@@ -226,12 +233,6 @@ const Formulaire = () => {
                     Submit
                 </Button>
             </Form>
-            {isValid && formData.name && formData.email && (
-                <div className="mt-4">
-                    <h4>Form Data:</h4>
-                    <pre>{JSON.stringify(formData, null, 2)}</pre>
-                </div>
-            )}
         </div>
     );
 };
