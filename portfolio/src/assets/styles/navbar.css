@@ -1,4 +1,8 @@
 /* Default link style */
+.navbar {
+    min-width: 90%!important;
+}
+
 .navbar .navbar-link {
     color: var(--text-color) !important; /* Default color for inactive links */
     text-decoration: none !important;
@@ -86,25 +90,3 @@
     }
 }
 
-/* Animations */
-@keyframes slideRight {
-    0% {
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideTop {
-    0% {
-        transform: translateY(50px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}

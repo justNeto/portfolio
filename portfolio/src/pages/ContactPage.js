@@ -5,7 +5,7 @@ import '../assets/styles/contactpage.css'
 function ContactPage() {
   const subject = "Contact";
   return (
-    <Container className='parent-container'>
+    <Container >
       <Row className='contact-page'>
         <Col className='contact-text'>
           <Col className='contact-description'>
@@ -16,13 +16,13 @@ function ContactPage() {
           <Col className='contact-social-media'>
             <h3>Connect with Me</h3>
             <Row className='contact-social-media-buttons'>
-              <a href='https://www.linkedin.com' style={{ '--j': 1 }}>
+              <a href='https://www.linkedin.com/in/augusto-aleman'  style={{ '--j': 1 }}>
                 <i class='bx bxl-linkedin' ></i>
               </a>
-              <a href='https://www.github.com' style={{ '--j': 2 }}>
+              <a href='https://github.com/AugustoAleman' style={{ '--j': 2 }}>
                 <i class='bx bxl-github' ></i>
               </a>
-              <a href = 'https://www.facebook.com' style = {{'--j': 3}}>
+              <a href = 'https://www.facebook.com/octavio.aleman.3557'  style = {{'--j': 3}}>
                 <i class='bx bxl-facebook' ></i>
               </a>
             </Row>

@@ -13,10 +13,6 @@ body {
     color: var(--text-color)!important;
   }
 
-  .router {
-    background-color: var(--background-color)!important;
-  }
-
 /*******************KEYFRAME ANIMATIONS**********************/
 @keyframes floatTop {
     0% {

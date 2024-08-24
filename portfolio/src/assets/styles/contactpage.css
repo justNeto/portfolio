@@ -1,19 +1,21 @@
 .contact-page {
     min-height: 91vh!important;
     width: 100%;
-    display: grid;
-    gap: 2rem;
+    display: grid!important;
+    gap: 4rem;
     grid-template-columns: 
-        repeat(auto-fit, minmax(650px, 1fr))!important;
-    align-items: center;
-    justify-content: center;
+        repeat(auto-fit, minmax(350px, 1fr))!important;
+    align-items: center!important;
+    justify-content: center!important;
 }
 
 .contact-text {
-    min-height: 100%!important;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin: 0!important;
+    padding: 1rem!important;
     gap: 1.5rem;
 
     .contact-description {
@@ -25,6 +27,9 @@
         h1 {
             font-weight: 800;
             font-size: clamp(1.5rem, 1rem + 1.5vw, 2.5rem);
+            animation: slideBottom 1s ease forwards;
+            animation-delay: 1.1s;
+            opacity: 0;
 
             span {
                 color: var(--primary-color);
@@ -34,26 +39,36 @@
         p {
             text-align: justify;
             font-weight: 300;
-            font-size: clamp(0.8rem, 0.3rem + 1vw, 0.95rem);
+            font-size: clamp(0.8rem, 0.3rem + 1vw, 0.9rem);
+            animation: slideRight 1s ease forwards;
+            animation-delay: 1.3s;
+            opacity: 0;
         }
     }
 
     .separator {
         border: 0; 
-        height: 1px; 
-        background-color: var(--accent-color); 
+        height: 2px!important; 
+        background-color: var(--alternate-background); 
         width: 100%;
+        animation: slideLeft 1s ease forwards;
+        animation-delay: 1.5s;
+        opacity: 0;
     }
 
     .contact-social-media {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        min-width: 100%;
         gap: 1rem;
 
         h3 {
             text-align: justify;
             font-weight: 800;
+            animation: slideTop 1s ease forwards;
+            animation-delay: 1.7s;
+            opacity: 0;
         }
 
         .contact-social-media-buttons {
@@ -92,31 +107,37 @@
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 992px) { 
 
-    .parent-container {
-        padding: 0!important;
-        margin: 0!important;
-        width: 100vw!important;
-    }
-
     .contact-page {
         align-items: center!important;
         min-width: 100%!important;
         margin: 0!important;
+        gap: 2rem!important;
     }
 
     .contact-text {
-        margin-top: 2rem!important;
+        margin-top: 3rem!important;
         align-items: center;
         margin-right: 1rem;
         margin-left: 1rem;
+        gap: 0.5rem!important;
     }
     h1, h3 {
         text-align: center!important;
+        animation:  fadeIn 4s ease forwards!important;
+        animation-delay: 1.1s!important;
+        opacity: 0;
     }
 
     p {
         max-width: 50rem;
-        min-width: 18rem
+        min-width: 18rem;
+        animation:  fadeIn 4s ease forwards!important;
+        animation-delay: 1.3s!important;
+    }
+
+    .separator {
+        animation:  fadeIn 4s ease forwards!important;
+        animation-delay: 1.5s!important;
     }
 
     .contact-social-media-buttons {
@@ -129,7 +150,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: end;
+    margin: 0!important;
 }
 
 .formulaire {
@@ -137,7 +159,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 70%;
+    max-width: 90%;
+    min-width: 20rem!important;
     border-radius: 2%;
     padding: 2rem;
     width: 100%!important;
@@ -154,13 +177,52 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 100%!important;
     width: 100% !important;
-    padding: 2rem;
+    padding: 0em;
     border-radius: 2%;
+    animation:  zoomIn 2s ease forwards;
+    animation-delay: 1.7s;
+    opacity: 0;
+    
+
+    * {
+        max-width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        * {
+            justify-content: start;
+            align-items: start;
+        }
+    }
+
+    .form-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        min-width: 100%;
+
+        * {
+            min-width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+        }
+    }
 
     .textfield-first {
-        width: calc(width / 2)!important;
         border: none;
         border-bottom: 2px solid var(--text-color);
         background-color: var(--background-color) !important;
@@ -170,7 +232,7 @@
     }
 
     .textfield-second {
-        width: clamp(18rem, 14rem + 25vw, 40rem)!important;
+        min-width: 100%!important;
         border: none;
         border-bottom: 2px solid var(--text-color);
         background-color: var(--background-color) !important;
@@ -245,14 +307,27 @@
         }
     }
 
+    .submit-button{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .btn-primary {
-        background-color: var(--primary-color)!important; 
-        border-color: var(--primary-color)!important; 
-        font-size: 0.9rem; 
-        height: 2.5rem;
-        width: 7rem;
+        color: var(--text-color)!important;
+        font-size: 1rem!important;
+        width: 9rem!important;
+        background-color: var(--primary-color)!important;
+        border-color:  var(--primary-color)!important;
         margin-bottom: 2rem;
         margin-top: 1rem;
+    }
+
+    .btn-primary:hover{
+        background-color: var(--primary-color)!important;
+        color: var(--text-color)!important;
+        box-shadow: 0 0 20px var(--primary-color);
     }
 
     .form-control:-webkit-autofill {
@@ -271,10 +346,16 @@
 }
 
 @media (max-width: 992px) { 
+
+    .contact-formulaire {
+        align-items: center;
+    }
     .formulaire {
         margin-top: 2rem;
         padding: 0.5rem;
         width: 100%!important;
+        animation:  fadeIn 4s ease forwards!important;
+        animation-delay: 1.7s!important;
     }
 
     .contact-formulaire {

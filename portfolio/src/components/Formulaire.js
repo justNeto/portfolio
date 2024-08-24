@@ -131,7 +131,7 @@ const Formulaire = () => {
     return (
         <div className="formulaire">
             <Form onSubmit={handleSubmit}>
-            <div className="form-row">
+                <div className="form-row">
                     <Form.Floating className="mb-3 flex-fill">
                         <Form.Control
                             className='textfield-first'
@@ -170,68 +170,70 @@ const Formulaire = () => {
                         </Form.Text>
                     </Form.Floating>
                 </div>
+                <div className="form-col">
+                    <Form.Floating className="mb-3">
+                        <Form.Control
+                            autocomplete="off"
+                            className='textfield-second'
+                            type="email"
+                            id="floatingEmail"
+                            name="email"
+                            placeholder="Email*"
+                            value={formData.email}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            isInvalid={!!errors.email}
+                        />
+                        <label htmlFor="floatingEmail">Email*</label>
+                        <Form.Text className={!!errors.email ? 'text-danger' : 'text-muted'}>
+                            {getHelperText('email')}
+                        </Form.Text>
+                    </Form.Floating>
 
-                <Form.Floating className="mb-3">
-                    <Form.Control
-                        autocomplete="off"
-                        className='textfield-second'
-                        type="email"
-                        id="floatingEmail"
-                        name="email"
-                        placeholder="Email*"
-                        value={formData.email}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                        isInvalid={!!errors.email}
-                    />
-                    <label htmlFor="floatingEmail">Email*</label>
-                    <Form.Text className={!!errors.email ? 'text-danger' : 'text-muted'}>
-                        {getHelperText('email')}
-                    </Form.Text>
-                </Form.Floating>
+                    <Form.Floating className="mb-3">
+                        <Form.Control
+                            autocomplete="off"
+                            className='textfield-second'
+                            type="text"
+                            id="floatingPhone"
+                            name="phone"
+                            placeholder="Phone"
+                            value={formData.phone}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            isInvalid={!!errors.phone}
+                        />
+                        <label htmlFor="floatingPhone">Phone</label>
+                        <Form.Text className={!!errors.phone ? 'text-danger' : 'text-muted'}>
+                            {getHelperText('phone')}
+                        </Form.Text>
+                    </Form.Floating>
 
-                <Form.Floating className="mb-3">
-                    <Form.Control
-                        autocomplete="off"
-                        className='textfield-second'
-                        type="text"
-                        id="floatingPhone"
-                        name="phone"
-                        placeholder="Phone"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                        isInvalid={!!errors.phone}
-                    />
-                    <label htmlFor="floatingPhone">Phone</label>
-                    <Form.Text className={!!errors.phone ? 'text-danger' : 'text-muted'}>
-                        {getHelperText('phone')}
-                    </Form.Text>
-                </Form.Floating>
-
-                <Form.Floating className="mb-3">
-                    <Form.Control
-                        autocomplete="off"
-                        className='textfield-second'
-                        as="textarea"
-                        id="floatingMessage"
-                        name="message"
-                        placeholder="Message*"
-                        style={{ height: '100px' }}
-                        value={formData.message}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                        isInvalid={!!errors.message}
-                    />
-                    <label htmlFor="floatingMessage">Message*</label>
-                    <Form.Text className={!!errors.message ? 'text-danger' : 'text-muted'}>
-                        {getHelperText('message')}
-                    </Form.Text>
-                </Form.Floating>
-
-                <Button type="submit" className="btn btn-primary" disabled={!isValid}>
-                    Submit
-                </Button>
+                    <Form.Floating className="mb-3">
+                        <Form.Control
+                            autocomplete="off"
+                            className='textfield-second'
+                            as="textarea"
+                            id="floatingMessage"
+                            name="message"
+                            placeholder="Message*"
+                            style={{ height: '100px' }}
+                            value={formData.message}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            isInvalid={!!errors.message}
+                        />
+                        <label htmlFor="floatingMessage">Message*</label>
+                        <Form.Text className={!!errors.message ? 'text-danger' : 'text-muted'}>
+                            {getHelperText('message')}
+                        </Form.Text>
+                    </Form.Floating>
+                </div>
+                <div className='submit-button'>
+                   <Button type="submit" className="btn-primary" disabled={!isValid}>
+                        Submit
+                    </Button>
+                   </div>
             </Form>
         </div>
     );

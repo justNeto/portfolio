@@ -12,7 +12,7 @@ function NavbarComponent() {
 
     return (
         <Navbar expand='lg' bg="dark" data-bs-theme="dark" className='navbar'>
-            <Container>
+            <Container className='navbar-conatner'>
                 <Navbar.Brand as={NavLink} to='/'>
                     <img
                         alt=''
