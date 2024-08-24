@@ -16,15 +16,15 @@ function AboutSection() {
         <Col className='about-page-cards'>
           <Row>
             <Col className='cards-first'>
-              <Card className = 'card-web' style={{ '--j': 4  }}>
-                <Card.Body className = 'card-experience-body'>
-                  <Card.Title className = 'card-experience-title'><i class='bx bx-world' ></i></Card.Title>
-                  <Card.Subtitle className="card-experience-subtitle">Web Development</Card.Subtitle>
-                  <Card.Text className="card-experience-text">
+              <div className = 'card-web' style={{ '--j': 4  }}>
+                <div className = 'card-experience-body'>
+                  <h3 className = 'card-experience-title'><i class='bx bx-world' ></i></h3>
+                  <h5 className="card-experience-subtitle">Web Development</h5>
+                  <p className="card-experience-text">
                   Practical experience in turning data into powerful Machine Learning models.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
+                  </p>
+                </div>
+              </div>
               <Card className = 'card-data' style={{ '--j': 6  }}>
                 <Card.Body className = 'card-experience-body'>
                   <Card.Title className = 'card-experience-title'><i class='bx bx-stats' ></i></Card.Title>
