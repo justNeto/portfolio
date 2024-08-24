@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Form } from 'react-bootstrap';
+import '../assets/styles/contactpage.css'
 
 const Formulaire = () => {
     const [formData, setFormData] = useState({ name: '', surname: '', email: '', phone: '', message: '' });

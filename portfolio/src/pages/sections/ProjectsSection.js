@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import projectsData from './data/projectsData.json'; // Import the JSON file
+import '../../assets/styles/aboutpage.css';
 
 const importImage = (imageName) => {
     try {
