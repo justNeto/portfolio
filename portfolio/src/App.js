@@ -6,10 +6,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <Router>
-      <NavbarComponent />
-      <AppRouter />
-    </Router>
+    <div className = 'router'>
+      <Router>
+        <NavbarComponent />
+        <AppRouter />
+      </Router>
+    </div>
   );
 }
 
