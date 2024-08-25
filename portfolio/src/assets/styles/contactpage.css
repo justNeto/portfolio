@@ -131,7 +131,6 @@
 
     p {
         max-width: 50rem!important;
-        min-width: 18rem!important;
         animation:  fadeIn 4s ease forwards!important;
         animation-delay: 1.3s!important;
     }

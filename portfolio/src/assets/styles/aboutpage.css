@@ -1,11 +1,11 @@
 /****************** ABOUT ME SECTION **********************/
 .about-page {
-    display: grid;
     gap: 2rem;
-    grid-template-columns: 
-        repeat(auto-fit, minmax(650px, 1fr))!important;
+    display: flex;
+    flex-direction: row;
     min-height: 91vh!important;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .about-page-text {
@@ -15,6 +15,7 @@
     justify-content: space-around;
     justify-content: center;
     text-align: justify;
+    gap: 1.5rem;
 }
 
 .about-page-text > h1{
@@ -38,25 +39,32 @@
     animation: slideRight 1s ease forwards;
     animation-delay: calc(.7s + var(--j) * 0.3s);
     opacity: 0;
+    margin: 0;
+    max-width: 40rem;
+}
+
+.about-page-cards-container {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    max-height: 100%;
+    gap: 1.5rem;
 }
 
 .about-page-cards {
-    min-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 40%!important;
 }
 
 .cards-first, .cards-second {
     display: flex;
     flex-direction: column;
-    min-height: 100%;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    margin-left: 1rem;
-    max-width: 10rem!important;;
+    gap: 3rem;
+
 }
 
 .cards-first > *:hover, .cards-second > *:hover {
@@ -81,8 +89,9 @@
 }
 
 .card-web, .card-data, .card-ai, .card-swe {
-    width: 14rem!important;
-    height: 14rem!important;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    max-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -93,11 +102,11 @@
 }
 
 .card-web, .card-data {
-    background-image: linear-gradient(to right, var(--primary-color) , #a969e9);
+    background-image: linear-gradient(to right, var(--primary-color) , #c349e9);
 }
 
 .card-ai, .card-swe {
-    background-image: linear-gradient(to left, var(--primary-color) , #a969e9);
+    background-image: linear-gradient(to left, var(--primary-color) , #c349e9);
 }
 
 .card-experience-body {
@@ -107,28 +116,24 @@
     align-items: center;
     max-width: 100%;
     padding: 1rem;
-
-    p {
-        max-width: 5rem!important;
-    }
 }
 
 .card-experience-title {
     color: var(--text-color)!important;
-    font-size: clamp(1.2rem, 1rem + 2.5vw, 3rem)!important;
+    font-size: clamp(1rem, 0.9rem + 2vw, 3rem)!important;
     text-align: center;
 }
 
 .card-experience-subtitle {
     color: var(--text-color)!important;
-    font-size: clamp(0.7rem, 0.2rem + 1vw, 1rem)!important;
+    font-size: clamp(0.6rem, 0.1rem + 0.85vw, 1rem)!important;
     text-align: center;
     font-weight: 600!important;
 }
 
 .card-experience-text {
     color: var(--text-color)!important;
-    font-size: clamp(0.6rem, 0.1rem + 1vw, 0.8rem);
+    font-size: clamp(0.5rem, 0.1rem + 0.75vw, 0.8rem);
     text-overflow: clip;
     font-weight: 300!important;
     text-align: center;
@@ -158,9 +163,97 @@
 }
 
 @media (max-width: 992px) { 
-    .card-web, .card-data, .card-ai, .card-swe {
-        width: 10rem!important;
-        height: 10rem!important;
+
+    .about-page {
+        gap: 2rem;
+        flex-direction: column;
+    }
+
+    .about-page-text {
+        gap: 0;
+    }
+
+    .about-page-text  p{
+        padding: 1rem;
+    }
+
+    .about-page-cards {
+        max-width: 100%!important;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-page-cards-container {
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        margin-right: 0;
+    }
+
+    .cards-first, .cards-second {
+        max-width: 35%!important;
+        gap: 2rem;
+        margin: 0!important;
+        padding: 0%!important;
+    
+    }
+
+    .card-experience-title {
+        font-size: clamp(1rem, 1rem + 3vw, 3rem)!important;
+    }
+    
+    .card-experience-subtitle {
+        font-size: clamp(0.6rem, 0.2rem + 1.2vw, 1rem)!important;
+    }
+    
+    .card-experience-text {
+        font-size: clamp(0.5rem, 0.1rem + 1.5vw, 0.8rem);
+    }
+
+    .about-page-text > h1{
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 450px) { 
+
+    
+
+    .card-experience-title {
+        font-size: clamp(1rem, 0.8rem + 3vw, 3rem)!important;
+    }
+    
+    .card-experience-subtitle {
+        font-size: clamp(0.6rem, 0.1rem + 1.2vw, 1rem)!important;
+    }
+    
+    .card-experience-text {
+        font-size: clamp(0.5rem, 0.1rem + 1.5vw, 0.8rem);
+        margin-top: 0.15rem;
+    }
+
+    .about-page-cards-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .cards-first {
+        margin-top: 0%;
+        min-width: 80%;
+        flex-direction: row;
+        animation: floatRight 3s ease-in-out infinite;
+        margin-right: 1rem!important;
+        align-items: end;
+    }
+    
+    .cards-second {
+        min-width: 80%;
+        flex-direction: row;
+        animation: floatLeft 3s ease-in-out infinite;
+        margin-left: 1rem!important;
+        align-items: start;
     }
 }
 
