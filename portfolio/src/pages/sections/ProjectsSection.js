@@ -28,24 +28,20 @@ const downloadPDF = () => {
 
 function ProjectsSection() {
     const [projects, setProjects] = useState([]);
-
-
-
     useEffect(() => {
         // Set the projects data
         setProjects(projectsData);
     }, []);
 
     return (
-        <Container>
             <Col className='projects-section'>
-                <Row className='projects-header'>
+                <Col className='projects-header'>
                     <h1>My <span>Latest </span>Projects</h1>
                     <p>
-                        Explore some of my latest projects that highlight my skills and expertise in web development, AI, and data science. Each project demonstrates a different aspect of my capabilities and problem-solving approach.
+                        Explore some of my latest projects that highlight my skills and expertise in Artificial Intelligence, Data Science, Web Development, networking and software engineering. Each project demonstrates a different aspect of my capabilities and problem-solving approach.
                     </p>
-                </Row>
-                <Row className='project-cards'>
+                </Col>
+                <div className='project-cards'>
                     {projects.map((project, index) => (
                         <div key={index} className='project-card'
                             style={{
@@ -68,16 +64,15 @@ function ProjectsSection() {
                             </div>
                         </div>
                     ))}
-                </Row>
-                <Row className='resume-button'>
+                </div>
+                <Col className='resume-button'>
                     <p>
                         Want to know more about my professional background?
                         Download my resume for a detailed overview of my skills, experience, and qualifications.
                     </p>
                     <Button className='contact-button-g' variant="outline-secondary" onClick={downloadPDF}>Download CV</Button>{' '}
-                </Row>
+                </Col>
             </Col>
-        </Container>
     );
 }
 
