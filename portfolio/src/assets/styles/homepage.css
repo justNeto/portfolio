@@ -102,7 +102,7 @@
 .social-media-row {
     display: flex;
     flex-direction: row;
-    gap: 1.5rem;
+    gap: 3rem;
     max-width: 100%;
     margin-bottom: 2rem;
 }
@@ -141,7 +141,7 @@
     width: 25rem;
     height: 25rem;
     transition: 1s;
-    animation: zoomIn 0.5s ease forwards, floatBottom 4s ease-in-out infinite;
+    animation: fadeIn 4s ease forwards, floatBottom 4s ease-in-out infinite;
     animation-delay: 1.8s, 2.3s;
     opacity: 0;
   }

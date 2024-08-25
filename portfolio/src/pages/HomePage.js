@@ -36,7 +36,7 @@ function HomePage() {
         typedInstanceRef.current = new window.Typed(typedElementRef.current, {
           strings: [
             'Developer',
-            'AI Engineer',
+            'ML Specialist',
             'Data Scientist',
             'Software Engineer'
           ],
@@ -79,7 +79,7 @@ function HomePage() {
             <h3>And I'm a <span ref={typedElementRef} className='multiple-text'></span></h3>
             <p>Software Development and Computer Technologies Specialist with solid experience in creating efficient and scalable technological solutions. Passionate about developing innovative projects that drive digital transformation in various industries.</p>
             <Row className='contact-buttons'>
-              <Button className='contact-button-l' variant="outline-secondary" size='sm'>Contact</Button>{' '}
+              <Button className='contact-button-l' variant="outline-secondary" size='sm' href = '/contact'>Contact</Button>{' '}
               <Button className='contact-button-g' variant="outline-secondary" onClick={downloadPDF}>Download CV</Button>{' '}
             </Row>
           </Col>
