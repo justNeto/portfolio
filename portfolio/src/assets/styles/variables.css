@@ -38,6 +38,30 @@ body {
     }
 }
 
+@keyframes floatLeft {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-12px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes floatRight {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(12px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 @keyframes slideRight {
     0% {
         transform: translateX(-100px);
