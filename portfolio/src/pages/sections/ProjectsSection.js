@@ -11,8 +11,25 @@ const importImage = (imageName) => {
     }
 };
 
+const downloadPDF = () => {
+    fetch(`${process.env.REACT_APP_API_URL}/download`)
+        .then(response => response.blob())
+        .then(blob => {
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'Resume Octavio Aleman.pdf';
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+        })
+        .catch(error => console.error('Error downloading the file.', error));
+};
+
 function ProjectsSection() {
     const [projects, setProjects] = useState([]);
+
+
 
     useEffect(() => {
         // Set the projects data
@@ -57,7 +74,7 @@ function ProjectsSection() {
                         Want to know more about my professional background?
                         Download my resume for a detailed overview of my skills, experience, and qualifications.
                     </p>
-                    <Button className='contact-button-g' variant="outline-secondary">Download CV</Button>{' '}
+                    <Button className='contact-button-g' variant="outline-secondary" onClick={downloadPDF}>Download CV</Button>{' '}
                 </Row>
             </Col>
         </Container>

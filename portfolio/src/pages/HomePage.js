@@ -7,6 +7,21 @@ function HomePage() {
   const typedElementRef = useRef(null);
   const typedInstanceRef = useRef(null);
 
+  const downloadPDF = () => {
+    fetch(`${process.env.REACT_APP_API_URL}/download`)
+        .then(response => response.blob())
+        .then(blob => {
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'Resume Octavio Aleman.pdf';
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+        })
+        .catch(error => console.error('Error downloading the file.', error));
+};
+
   useEffect(() => {
     const scriptId = 'typed-js-script';
     const existingScript = document.getElementById(scriptId);
@@ -64,8 +79,8 @@ function HomePage() {
             <h3>And I'm a <span ref={typedElementRef} className='multiple-text'></span></h3>
             <p>Software Development and Computer Technologies Specialist with solid experience in creating efficient and scalable technological solutions. Passionate about developing innovative projects that drive digital transformation in various industries.</p>
             <Row className='contact-buttons'>
-              <Button className='contact-button-l' variant="outline-secondary" size='sm' href = '/contact'>Contact</Button>{' '}
-              <Button className='contact-button-g' variant="outline-secondary">Download CV</Button>{' '}
+              <Button className='contact-button-l' variant="outline-secondary" size='sm'>Contact</Button>{' '}
+              <Button className='contact-button-g' variant="outline-secondary" onClick={downloadPDF}>Download CV</Button>{' '}
             </Row>
           </Col>
           <Col className='social-media'>
