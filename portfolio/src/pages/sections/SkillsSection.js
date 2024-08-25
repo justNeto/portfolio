@@ -55,7 +55,7 @@ function SkillSection() {
           </Row>
         </Col>
 
-        <Col xs={6} className='education'>
+        <Col  className='education'>
           <h1>My <span>Education</span></h1>
           <Col className='timeline'>
             
@@ -69,7 +69,7 @@ function SkillSection() {
             >
             <TimelineItem>
                 <TimelineOppositeContent color="secondary" className='timeline-year'  style={{ '--j': 2 }}>
-                   <h5 className='timeline-subtitle'><span>June 2024</span></h5>
+                   <h5 className='timeline-subtitle'><span>06/2024</span></h5>
                 </TimelineOppositeContent>
                 <TimelineSeparator color = 'secondary'  className='timeline-separator'  style={{ '--j': 1 }}>
                     <TimelineDot color = 'primary'  className='timeline-dot'  style={{ '--j': 1 }}/>
@@ -80,14 +80,14 @@ function SkillSection() {
                     <Typography><h5 className='timeline-subtitle' style={{ '--j': 4 }}>Tecnológico de Monterrey</h5></Typography>
                     <Typography>
                         <p className='timeline-text' style={{ '--j': 5 }}>
-                        Developed expertise in software development, system architecture, and technological innovation. Gained hands-on experience with various programming languages and technologies through rigorous coursework and projects.
+                        Gained expertise in software engineering, programming languages, data structures, algorithms, and computer systems. Gained hands-on experience in software development, designing, implementing, and testing efficient and scalable solutions. 
                         </p>
                     </Typography>
                 </TimelineContent>
             </TimelineItem>
             <TimelineItem>
                 <TimelineOppositeContent color="secondary" className='timeline-year'  style={{ '--j': 7 }}>
-                   <h5 className='timeline-subtitle'><span>May 2024</span></h5>
+                   <h5 className='timeline-subtitle'><span>05/2024</span></h5>
                 </TimelineOppositeContent>
                 <TimelineSeparator color = 'secondary' className='timeline-separator'  style={{ '--j': 6 }}>
                     <TimelineDot color = 'primary' className='timeline-dot'  style={{ '--j': 6 }}/>
@@ -98,14 +98,14 @@ function SkillSection() {
                     <Typography><h5 className='timeline-subtitle' style={{ '--j': 9 }}>Huawei Global Training Center</h5></Typography>
                     <Typography>
                         <p className='timeline-text' style={{ '--j': 10 }}>
-                        Demonstrated proficiency in artificial intelligence algorithms and practical AI applications.
+                        Enhanced AI expertise through the Infotec AI 1000 program, gaining proficiency in machine learning, deep learning, and AI tools. Gained hands-on experience in AI development through  applying theoretical knowledge to real-world problems.
                         </p>
                     </Typography>
                 </TimelineContent>
             </TimelineItem>
             <TimelineItem>
                 <TimelineOppositeContent color="secondary" className='timeline-year'  style={{ '--j': 12 }}>
-                   <h5 className='timeline-subtitle'><span>December 2023</span></h5>
+                   <h5 className='timeline-subtitle'><span>12/2023</span></h5>
                 </TimelineOppositeContent>
                 <TimelineSeparator color = 'secondary' className='timeline-separator'  style={{ '--j': 11 }}>
                     <TimelineDot color = 'primary' className='timeline-dot'  style={{ '--j': 11 }}/>
@@ -116,7 +116,7 @@ function SkillSection() {
                     <Typography><h5 className='timeline-subtitle' style={{ '--j': 14 }}>Tecnológico de Monterrey</h5></Typography>
                     <Typography>
                         <p className='timeline-text' style={{ '--j': 15 }}>
-                        Gained advanced skills in data analytics and machine learning to drive data-driven decision-making.
+                        Acquired prowess in data analysis techniques, statistical modeling, and machine learning algorithms. Gained practical experience working with various data sources, cleaning, preprocessing, and analyzing data using Python.
                         </p>
                     </Typography>
                 </TimelineContent>
