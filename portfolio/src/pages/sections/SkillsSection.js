@@ -36,7 +36,7 @@ function SkillSection() {
       <Row className='skills-section'>
         <Col className='skills'>
           <h1>My <span>Skills</span></h1>
-          <Row className='skill-cards'>
+          <div className='skill-cards'>
             {skillsData.map((skill, index) => (
                 <Card className='skill-card' style={{ '--j': index + 1 }}>
                   <Card.Body className='skill-card-body'>
@@ -52,7 +52,7 @@ function SkillSection() {
                 </Card>
               
             ))}
-          </Row>
+          </div>
         </Col>
 
         <Col  className='education'>
@@ -69,7 +69,7 @@ function SkillSection() {
             >
             <TimelineItem>
                 <TimelineOppositeContent color="secondary" className='timeline-year'  style={{ '--j': 2 }}>
-                   <h5 className='timeline-subtitle'><span>06/2024</span></h5>
+                   <h5 className='timeline-subtitle'><span>06 / 2024</span></h5>
                 </TimelineOppositeContent>
                 <TimelineSeparator color = 'secondary'  className='timeline-separator'  style={{ '--j': 1 }}>
                     <TimelineDot color = 'primary'  className='timeline-dot'  style={{ '--j': 1 }}/>
@@ -87,7 +87,7 @@ function SkillSection() {
             </TimelineItem>
             <TimelineItem>
                 <TimelineOppositeContent color="secondary" className='timeline-year'  style={{ '--j': 7 }}>
-                   <h5 className='timeline-subtitle'><span>05/2024</span></h5>
+                   <h5 className='timeline-subtitle'><span>05 / 2024</span></h5>
                 </TimelineOppositeContent>
                 <TimelineSeparator color = 'secondary' className='timeline-separator'  style={{ '--j': 6 }}>
                     <TimelineDot color = 'primary' className='timeline-dot'  style={{ '--j': 6 }}/>
@@ -105,7 +105,7 @@ function SkillSection() {
             </TimelineItem>
             <TimelineItem>
                 <TimelineOppositeContent color="secondary" className='timeline-year'  style={{ '--j': 12 }}>
-                   <h5 className='timeline-subtitle'><span>12/2023</span></h5>
+                   <h5 className='timeline-subtitle'><span>12 / 2023</span></h5>
                 </TimelineOppositeContent>
                 <TimelineSeparator color = 'secondary' className='timeline-separator'  style={{ '--j': 11 }}>
                     <TimelineDot color = 'primary' className='timeline-dot'  style={{ '--j': 11 }}/>
