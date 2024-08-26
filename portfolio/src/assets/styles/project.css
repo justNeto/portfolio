@@ -52,15 +52,6 @@
     }
 }
 
-.separator {
-    height: 1px!important; 
-    background-color: var(--alternate-background)!important; 
-    min-width: 95%;
-    padding: 0rem;
-    opacity: 0.4!important;
-    padding-top: 0.5rem;
-}
-
 .project-data {
     display: flex;
     flex-direction: column;
