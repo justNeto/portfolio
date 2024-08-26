@@ -152,7 +152,7 @@
     font-size: clamp(0.7rem, 0.1rem + 0.75vw, 0.8rem);
     text-overflow: clip;
     font-weight: 300!important;
-    text-align: center;
+    text-align: justify;
     margin-top: 1rem;
     padding: 1px!important;
     overflow-wrap: break-word!important; 

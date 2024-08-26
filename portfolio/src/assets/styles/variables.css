@@ -157,3 +157,12 @@ body {
 		background-position: 0% 50%;
 	}
 }
+
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0;
+    }
+    to {
+      background-position: 100%;
+    }
+  }
