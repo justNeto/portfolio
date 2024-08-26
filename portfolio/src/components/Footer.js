@@ -11,7 +11,7 @@ function FooterComponent() {
             <Col className = 'navbar-description'>
                     <h3 className = 'footer-title'>{ name }</h3>
                     <p className = 'footer-text'>Innovative Developer Creating Tomorrow's Scalable Technologies Today. My focus is on delivering robust, scalable software that meets the challenges of the digital world. Let's collaborate to bring cutting-edge ideas to life.</p>
-                    <p className = 'footer-text'><i class='bx bx-envelope'></i> contact@octavio-aleman.tech</p>
+                    <Row className='footer-email'><i class='bx bx-envelope'></i><p className = 'footer-text'> contact@octavio-aleman.tech</p></Row>
                 </Col>
                 <Row className='footer-media'>
                     <Col className = 'navbar-links'>
@@ -44,7 +44,7 @@ function FooterComponent() {
            </Row>
            <Row className='bottom-footer'>
             <hr className="separator"></hr>
-                <p className = 'footer-text'>© 2024 All rights reserved - Octavio Aleman | Made with React, Bootsrap and Flask</p>
+                <p className = 'footer-text'>Designed and built by Octavio Aleman All Rights Reserved © 2024 | Made with React, Bootstrap and Flask</p>
 
            </Row>
 
