@@ -52,7 +52,6 @@ function ProjectPage() {
                         <img src=  {importImage(project.image2)} />
                         </Carousel.Item>
                     </Carousel>
-                    <hr className="separator"></hr>
                     <Row className='project-github'>
                         <a href={project.github} style={{ '--j': 2 }}>
                             <i class='bx bxl-github' ></i>
