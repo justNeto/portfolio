@@ -6,6 +6,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import '../assets/styles/navbar.css';
 import logo from '../assets/images/logo.png';
 
+const name = '</> OCTAVIO A.';
+
 function NavbarComponent() {
     const location = useLocation();
     console.log('Current location:', location.pathname);
@@ -14,11 +16,7 @@ function NavbarComponent() {
         <Navbar expand='lg' bg="dark" data-bs-theme="dark" className='navbar'>
             <Container className='navbar-conatner'>
                 <Navbar.Brand as={NavLink} to='/'>
-                    <img
-                        alt=''
-                        src={logo}
-                        className='navbar-logo'
-                    />
+                    <h1 className='navbar-title'>{ name }</h1>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls='basic-navbar-bar' />
                 <Navbar.Collapse id='basic-navbar-bar'>

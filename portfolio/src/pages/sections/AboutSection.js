@@ -51,7 +51,7 @@ function AboutSection() {
                   <Card.Title className = 'card-experience-title'><i class='bx bx-laptop' ></i></Card.Title>
                   <Card.Subtitle className="card-experience-subtitle">Software Engineering</Card.Subtitle>
                   <Card.Text className="card-experience-text">
-                  Expert in applying software engineering principles to complex problems
+                  Expert in applying software engineering principles to tackle complex problems.
                   </Card.Text>
                 </Card.Body>
               </Card>
