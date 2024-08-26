@@ -34,7 +34,7 @@
                 font-style: normal!important;
                 font-size: clamp(1.8rem, 1rem + 1.5vw, 2.5rem);
                 background-image: linear-gradient(
-                    45deg,
+                    -45deg,
                     #ffb3ba,
                     #c49c6e,
                     #bfbf76,
@@ -42,13 +42,35 @@
                     #ff7e74,
                     #3b82f6,
                     #c084fc,
-                    #db2777
+                    #db2777,
+                    #c084fc,
+                    #3b82f6,
+                    #ff7e74,
+                    #77b084,
+                    #bfbf76,
+                    #c49c6e,
+                    #ffb3ba
                    );
-                background-size: 300% 100%;
-                animation: gradientAnimation 8s linear infinite;
+                background-size: 500% 500%;
+                animation: gradientAnimation 12s linear infinite;
                 background-clip: text;
                 color: transparent;
-                max-width: 100%;
+                min-width: fit-content;
+            }
+
+            .footer-email {
+                width: 100%;
+                align-items: center;
+                justify-content: flex-start;
+                i {
+                    font-size: clamp(1.5rem, 0.1rem + 1.4vw, 2rem)!important;
+                    max-width: fit-content;
+                }
+                p {
+                    max-width: fit-content!important;
+                    margin: 0;
+                    padding: 0;
+                }
             }
         }
 
@@ -139,8 +161,10 @@
         font-weight: 200;
         color: var(--text-color);
         text-decoration: none;
-        font-size: clamp(0.6rem, 0.3rem + 1vw, 0.85rem);
+        font-size: clamp(0.8rem, 0.3rem + 1vw, 0.9rem);
         align-items: center;
+        justify-content: center;
+
     }
 }
 
@@ -148,6 +172,8 @@
 
     .footer-title {
         margin-top: 2rem;
+        animation: gradientAnimation 12s linear infinite!important;
+        opacity: 1;
     }
     .top-footer {
         flex-direction: column;
@@ -177,10 +203,15 @@
     .footer-media {
         flex-direction: column!important;
         align-items: center;
+        gap: 3rem!important;
 
         .navbar-links {
             max-width: 10rem;
         }
+    }
+
+    .footer-title, .footer-subtitle {
+        margin-bottom: 1rem!important;
     }
 
     .separator {

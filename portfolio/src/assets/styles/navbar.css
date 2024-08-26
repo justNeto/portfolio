@@ -19,22 +19,29 @@
     font-style: normal!important;
     font-size: clamp(1.8rem, 1rem + 1.5vw, 2.5rem);
     background-image: linear-gradient(
-        45deg,
-        #ffb3ba,
-        #c49c6e,
-        #bfbf76,
-        #77b084,
-        #ff7e74,
-        #3b82f6,
-        #c084fc,
-        #db2777
-       );
-    background-size: 300% 100%;
-    animation: gradientAnimation 8s linear infinite;
-    background-clip: text;
-    color: transparent;
-    max-width: 100%;
-}
+                    -45deg,
+                    #ffb3ba,
+                    #c49c6e,
+                    #bfbf76,
+                    #77b084,
+                    #ff7e74,
+                    #3b82f6,
+                    #c084fc,
+                    #db2777,
+                    #c084fc,
+                    #3b82f6,
+                    #ff7e74,
+                    #77b084,
+                    #bfbf76,
+                    #c49c6e,
+                    #ffb3ba
+                   );
+                background-size: 500% 500%;
+                animation: gradientAnimation 12s linear infinite;
+                background-clip: text;
+                color: transparent;
+                max-width: 100%;
+            }
 
 /* Hovered link */
 .navbar .navbar-link:hover {
@@ -90,6 +97,11 @@
         display: flex !important;
         justify-content: flex-start !important;
         gap: 0.3rem !important; /* Adds spacing between the links */
+    }
+
+    .navbar-title {
+        animation: gradientAnimation 12s linear infinite!important;
+        opacity: 1;
     }
 }
 
