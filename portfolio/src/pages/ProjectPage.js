@@ -49,18 +49,15 @@ function ProjectPage() {
                             <img src=  {importImage(project.bannerImage)} />
                         </Carousel.Item>
                         <Carousel.Item>
-                        <img src=  {importImage(project.bannerImage)} />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                        <img src=  {importImage(project.bannerImage)} />
+                        <img src=  {importImage(project.image2)} />
                         </Carousel.Item>
                     </Carousel>
-                    <p>{addBreaks(project.shortDescription)}</p>
-                    <p> 
-                        <i class='bx bx-right-arrow-alt'></i>
-                        &nbsp;To see the source code click 
-                        <a> here.</a>
-                    </p>
+                    <hr className="separator"></hr>
+                    <Row className='project-github'>
+                        <a href={project.github} style={{ '--j': 2 }}>
+                            <i class='bx bxl-github' ></i>
+                        </a>
+                    </Row>
                 </Col>
 
                 <Col className='project-data'>

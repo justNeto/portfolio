@@ -5,15 +5,16 @@
     align-items: center;
     min-height: 91vh!important;
     padding: 1rem;
+    gap: 2rem;
 }
 
 .project-images {
-    max-width: 47%!important;
+    max-width: 40vw!important;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
     flex-wrap: wrap;
 
     .project-carousel, img {
@@ -37,6 +38,27 @@
             color: var(--primary-color)!important;
         }
     }
+
+    .project-github {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        gap: 3vw;
+
+        * {
+            max-width: fit-content;
+        }
+    }
+}
+
+.separator {
+    height: 1px!important; 
+    background-color: var(--alternate-background)!important; 
+    min-width: 95%;
+    padding: 0rem;
+    opacity: 0.4!important;
+    padding-top: 0.5rem;
 }
 
 .project-data {

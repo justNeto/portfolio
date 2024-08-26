@@ -166,6 +166,26 @@
         justify-content: center;
 
     }
+
+    .footer-text:hover, .footer-link:hover {
+        cursor: pointer;
+    }
+
+}
+
+.modal-content {
+
+    .modal-body p{
+        font-size: clamp(0.8rem, 0.3rem + 1vw, 0.9rem)!important;
+        text-align: justify!important;
+        font-weight: 300!important;
+        animation: none!important;
+    }
+
+    .modal-footer button{
+        background-color: var(--primary-color)!important;
+        border-color: var(--primary-color)!important;
+    }
 }
 
 @media (max-width: 1024px) { 
