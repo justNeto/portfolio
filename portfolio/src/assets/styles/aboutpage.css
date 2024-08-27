@@ -292,7 +292,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-bottom: 1rem;
+    max-height: fit-content;
+    margin: 1rem;
 }
 
 .skills > h1, .education > h1{
@@ -513,17 +514,21 @@
     .skills-section {
         max-height: none!important;
         margin: 0!important;
-        padding: 0!important;
+        padding: 0rem!important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .skills {
         margin: 0!important;
         padding: 0!important;
-        max-height: fit-content!important;
+        max-height: 100vh!important;
     }
 
     .skill-cards {
         max-width: 100%;
+        display: grid;
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr))!important; /* Creates responsive square cards */
         gap: 0.8rem!important;
 
@@ -539,6 +544,7 @@
     .education {
         min-width: 100%!important;
         margin-bottom: 3rem;
+        min-height: fit-content;
     }
     
     .timeline {
