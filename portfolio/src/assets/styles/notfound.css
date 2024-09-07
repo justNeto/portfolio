@@ -1,0 +1,68 @@
+.not-found {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    min-height: 85vh!important;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.not-found-title {
+    margin-top: 0.5rem;
+    font-weight: 900!important;
+    font-style: normal!important;
+    font-size: clamp(3.5rem, 3rem + 8vw, 10rem);
+    background-image: linear-gradient(
+                    -45deg,
+                    #ffb3ba,
+                    #c49c6e,
+                    #bfbf76,
+                    #77b084,
+                    #ff7e74,
+                    #3b82f6,
+                    #c084fc,
+                    #db2777,
+                    #c084fc,
+                    #3b82f6,
+                    #ff7e74,
+                    #77b084,
+                    #bfbf76,
+                    #c49c6e,
+                    #ffb3ba
+                   );
+                background-size: 500% 500%;
+                animation: gradientAnimation 12s linear infinite!important;
+                background-clip: text;
+                color: transparent;
+                max-width: 100%;
+                opacity: 1;
+}
+
+.not-found-subtitle {
+    font-weight: 700;
+    font-size: clamp(1rem, 0.5rem + 1vw, 1.4rem)!important;
+}
+
+.not-found-text {
+    max-width: 50%;
+    font-weight: 300;
+    font-size: clamp(0.8rem, 0.3rem + 1vw, 1rem)!important;
+}
+
+.button-not-found{
+    color: var(--text-color)!important;
+    font-size: 1rem!important;
+    font-weight: 700!important;
+    width: 9rem!important;
+    margin-left: 0.5rem;
+    background-color: transparent!important;
+    border-color:  var(--text-color)!important;
+}
+
+.button-not-found:hover{
+    background-color: var(--text-color)!important;
+    color: var(--primary-color)!important;
+    box-shadow: 0 0 20px var(--text-color);
+}
