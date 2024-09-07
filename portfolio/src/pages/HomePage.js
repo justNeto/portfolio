@@ -46,7 +46,7 @@ function HomePage() {
           loop: true
         });
       } else {
-        console.error('Typed.js is not available.');
+        console.log('Typed.js is not available.');
       }
     };
 
@@ -86,13 +86,13 @@ function HomePage() {
           <Col className='social-media'>
             <Row className='social-media-row'>
               <a href='https://www.linkedin.com/in/augusto-aleman' style={{ '--j': 1 }}>
-                <i class='bx bxl-linkedin' ></i>
+                <i className='bx bxl-linkedin' ></i>
               </a>
               <a href='https://github.com/AugustoAleman' style={{ '--j': 2 }}>
-                <i class='bx bxl-github' ></i>
+                <i className='bx bxl-github' ></i>
               </a>
               <a href = 'https://www.facebook.com/octavio.aleman.3557' style = {{'--j': 3}}>
-                <i class='bx bxl-facebook' ></i>
+                <i className='bx bxl-facebook' ></i>
               </a>
             </Row>
           </Col>

@@ -18,7 +18,7 @@ function AboutSection() {
             <Col className='cards-first'>
               <Card className = 'card-web' style={{ '--j': 4  }}>
                 <Card.Body className = 'card-experience-body'>
-                  <Card.Title className = 'card-experience-title'><i class='bx bx-world' ></i></Card.Title>
+                  <Card.Title className = 'card-experience-title'><i className='bx bx-world' ></i></Card.Title>
                   <Card.Subtitle className="card-experience-subtitle">Web Development</Card.Subtitle>
                   <Card.Text className="card-experience-text">
                   Developed exceptional user experiences through web design.
@@ -27,8 +27,8 @@ function AboutSection() {
               </Card>
               <Card className = 'card-data' style={{ '--j': 6  }}>
                 <Card.Body className = 'card-experience-body'>
-                  <Card.Title className = 'card-experience-title'><i class='bx bx-stats' ></i></Card.Title>
-                  <Card.Subtitle className="card-experience-subtitle">Data Science & Analytics</Card.Subtitle>
+                  <Card.Title className = 'card-experience-title'><i className='bx bx-stats' ></i></Card.Title>
+                  <Card.Subtitle className="card-experience-subtitle">Data Science</Card.Subtitle>
                   <Card.Text className="card-experience-text">
                   Leveraged data analysis techniques to drive business decisions.
                   </Card.Text>
@@ -39,7 +39,7 @@ function AboutSection() {
 
             <Card className = 'card-ai' style={{ '--j': 5  }}>
                 <Card.Body className = 'card-experience-body'>
-                  <Card.Title className = 'card-experience-title'><i class='bx bxs-bot'></i></Card.Title>
+                  <Card.Title className = 'card-experience-title'><i className='bx bxs-bot'></i></Card.Title>
                   <Card.Subtitle className="card-experience-subtitle">Artificial Intelligence</Card.Subtitle>
                   <Card.Text className="card-experience-text">
                   Practical experience in turning data into powerful Machine Learning models.
@@ -48,7 +48,7 @@ function AboutSection() {
               </Card>
               <Card className = 'card-swe' style={{ '--j': 7  }}>
                 <Card.Body className = 'card-experience-body'>
-                  <Card.Title className = 'card-experience-title'><i class='bx bx-laptop' ></i></Card.Title>
+                  <Card.Title className = 'card-experience-title'><i className='bx bx-laptop' ></i></Card.Title>
                   <Card.Subtitle className="card-experience-subtitle">Software Engineering</Card.Subtitle>
                   <Card.Text className="card-experience-text">
                   Expert in applying software engineering principles to tackle complex problems.

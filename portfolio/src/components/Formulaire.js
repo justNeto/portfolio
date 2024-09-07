@@ -136,7 +136,7 @@ const Formulaire = () => {
                     <Form.Floating className="mb-3 flex-fill">
                         <Form.Control
                             className='textfield-first'
-                            autocomplete="off"
+                            autoComplete="off"
                             type="text"
                             id="floatingName"
                             name="name"
@@ -155,7 +155,7 @@ const Formulaire = () => {
                     <Form.Floating className="mb-3 flex-fill">
                         <Form.Control
                             className='textfield-first'
-                            autocomplete="off"
+                            autoComplete="off"
                             type="text"
                             id="floatingSurname"
                             name="surname"
@@ -174,7 +174,7 @@ const Formulaire = () => {
                 <div className="form-col">
                     <Form.Floating className="mb-3">
                         <Form.Control
-                            autocomplete="off"
+                            autoComplete="off"
                             className='textfield-second'
                             type="email"
                             id="floatingEmail"
@@ -193,7 +193,7 @@ const Formulaire = () => {
 
                     <Form.Floating className="mb-3">
                         <Form.Control
-                            autocomplete="off"
+                            autoComplete="off"
                             className='textfield-second'
                             type="text"
                             id="floatingPhone"
@@ -212,7 +212,7 @@ const Formulaire = () => {
 
                     <Form.Floating className="mb-3">
                         <Form.Control
-                            autocomplete="off"
+                            autoComplete="off"
                             className='textfield-second-message'
                             as="textarea"
                             id="floatingMessage"

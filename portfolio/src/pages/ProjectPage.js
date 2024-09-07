@@ -54,7 +54,7 @@ function ProjectPage() {
                     </Carousel>
                     <Row className='project-github'>
                         <a href={project.github} style={{ '--j': 2 }}>
-                            <i class='bx bxl-github' ></i>
+                            <i className='bx bxl-github' ></i>
                         </a>
                     </Row>
                 </Col>

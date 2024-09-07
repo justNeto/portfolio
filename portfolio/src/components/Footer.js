@@ -138,7 +138,7 @@ function FooterComponent() {
             <Col className = 'navbar-description'>
                     <h3 className = 'footer-title'>{ name }</h3>
                     <p className = 'footer-text'>Innovative Developer Creating Tomorrow's Scalable Technologies Today. My focus is on delivering robust, scalable software that meets the challenges of the digital world. Let's collaborate to bring cutting-edge ideas to life.</p>
-                    <Row className='footer-email'><i class='bx bx-envelope'></i><p className = 'footer-text'> contact@octavio-aleman.tech</p></Row>
+                    <Row className='footer-email'><i className='bx bx-envelope'></i><p className = 'footer-text'> contact@octavio-aleman.tech</p></Row>
                 </Col>
                 <Row className='footer-media'>
                     <Col className = 'navbar-links'>
@@ -157,13 +157,13 @@ function FooterComponent() {
                         <h5 className = 'footer-subtitle'>Social Media</h5>
                         <Row className='navbar-socials'>
                             <a href='https://www.linkedin.com/in/augusto-aleman' style={{ '--j': 1 }}>
-                                <i class='bx bxl-linkedin' ></i>
+                                <i className='bx bxl-linkedin' ></i>
                             </a>
                             <a href='https://github.com/AugustoAleman' style={{ '--j': 2 }}>
-                                <i class='bx bxl-github' ></i>
+                                <i className='bx bxl-github' ></i>
                             </a>
                             <a href = 'https://www.facebook.com/octavio.aleman.3557' style = {{'--j': 3}}>
-                                <i class='bx bxl-facebook' ></i>
+                                <i className='bx bxl-facebook' ></i>
                             </a>
                         </Row>
                     </Col>
