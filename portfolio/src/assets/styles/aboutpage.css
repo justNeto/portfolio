@@ -466,12 +466,13 @@
         max-width: 100%!important;
         margin-left: 0!important;
         margin-right: 0!important;
+        max-height: min-content!important;
     }
 
     .skill-cards {
         max-width: 95%;
         gap: 1rem;
-        min-height: 90%;
+        min-height: fit-content!important;
         justify-content: center;
         align-items: center;
         margin-left: 0rem!important;
