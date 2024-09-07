@@ -450,36 +450,37 @@
 @media (max-width: 1024px) { 
     .skills-section {
         flex-direction: column;
+        justify-content: center!important;
+        align-items: center!important;
+        margin: 0%!important;
+        max-width: 100%!important;
+    }
+
+    .skills {
+        margin-top: 2rem!important;
+        display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 2rem;
+        min-height: 100%;
+        padding: 0!important;
+        max-width: 100%!important;
+        margin-left: 0!important;
+        margin-right: 0!important;
+    }
 
-        .skills {
-            margin-top: 2rem!important;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 2rem;
-            min-height: 100%;
+    .skill-cards {
+        max-width: 95%;
+        gap: 1rem;
+        min-height: 90%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0rem!important;
+    }
 
-            .skill-cards {
-                max-width: 95%;
-                gap: 1rem;
-                min-height: 90%;
-                justify-content: center;
-                align-items: center;
-                margin-left: 0rem!important;
-
-                .skill-card {
-
-                    .skill-card-body {
-                        min-width: 100%;
-                        padding: 0.5rem;
-                    }
-                }
-            }
-
-
-        }
+    .skill-card-body {
+        min-width: 100%;
+        padding: 0.5rem;
     }
 
     .education {
@@ -491,16 +492,16 @@
         margin-top: 2rem!important;
         justify-content: center;
         align-items: center;
+    }
 
-        .timeline {
-            max-width: 100%!important;
-            padding: 0!important;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-left: 0!important;
-        }
+    .timeline {
+        max-width: 100%!important;
+        padding: 0!important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0!important;
     }
 
     .timeline-title, .timeline-subtitle, .timeline-text {
@@ -534,14 +535,11 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr))!important; /* Creates responsive square cards */
         gap: 0.8rem!important;
+    }
 
-        .skill-card {
-
-            .skill-card-body {
-                min-width: 100%;
-                padding: 0.5rem;
-            }
-        }
+    .skill-card-body {
+        min-width: 100%;
+        padding: 0.5rem;
     }
 
     .education {
@@ -639,57 +637,49 @@
 
 .project-card:hover {
     box-shadow: 0 0 30px var(--primary-color);
-
-    .project-card-header {
-        height: 100%!important;
-        animation: slideTopCard 1s ease forwards;
-        border-radius: 2%;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem;
-    }
-
-    .project-card-title {
-        color: var(--primary-color)!important;
-        text-align: center;
-        animation: slideRight 1s ease forwards;
-    }
-
-    .project-card-text {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        text-align: center;
-        animation: slideRight 1s ease forwards;
-        white-space: normal; /* Allow text to wrap */
-        overflow: visible; /* Show overflow */
-        text-overflow: clip; /* Remove ellipsis */
-    }
-
-    .project-button{
-        animation: zoomIn 1s ease forwards;
-        animation-delay: 0.5s;
-    }
 }
 
-.project-card:not(:hover) {
-    .project-card-header {
-        animation: slideBottomCard 1s ease forwards;
-        height: 100%;
-    }
+.project-card:hover .project-card-header {
+    height: 100%!important;
+    animation: slideTopCard 1s ease forwards;
+    border-radius: 2%;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
 
-    .project-card-title {
-        animation: slideLeft 1s ease forwards;
-    }
+.project-card:hover .project-card-text {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    animation: slideRight 1s ease forwards;
+    white-space: normal; /* Allow text to wrap */
+    overflow: visible; /* Show overflow */
+    text-overflow: clip; /* Remove ellipsis */
+}
 
-    .project-card-text {
-        animation: slideLeft 1s ease forwards;
-    
-    }
+.project-card:hover .project-button{
+    animation: zoomIn 1s ease forwards;
+    animation-delay: 0.5s;
+}
 
-    .project-button{
-        display: none;
-        animation: slideLeft 1s ease forwards;
-    }
+.project-card:not(:hover) .project-card-header {
+    animation: slideBottomCard 1s ease forwards;
+    height: 100%;
+}
+
+.project-card:not(:hover) .project-card-title {
+    animation: slideLeft 1s ease forwards;
+}
+
+.project-card:not(:hover)  .project-card-text {
+    animation: slideLeft 1s ease forwards;
+
+} 
+
+.project-card:not(:hover) .project-button{
+    display: none;
+    animation: slideLeft 1s ease forwards;
 }
 
 .project-card-body {
@@ -758,73 +748,3 @@
     text-align: justify;
 }
 
-@media (max-width: 1024px) { 
-
-    .projects-section {
-        max-width: 100%!important;
-        padding: 1rem;
-    }
-
-    .resume-button, .projects-header {
-        max-width: 100%!important;
-    }
-
-    .project-card:hover {
-        box-shadow: 0 0 30px var(--primary-color);
-    
-        .project-card-header {
-            height: 100%!important;
-            animation: slideTopCard 1s ease forwards!important;
-            border-radius: 2%;
-            justify-content: center;
-            align-items: center;
-            padding: 2rem;
-        }
-    
-        .project-card-title {
-            color: var(--primary-color)!important;
-            text-align: center;
-            animation: slideRight 1s ease forwards!important;
-        }
-    
-        .project-card-text {
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-            text-align: center;
-            animation: slideRight 1s ease forwards!important;
-            white-space: normal; /* Allow text to wrap */
-            overflow: visible; /* Show overflow */
-            text-overflow: clip; /* Remove ellipsis */
-        }
-    
-        .project-button{
-            animation: zoomIn 1s ease forwards!important;
-            animation-delay: 0.5s;
-        }
-    }
-    
-    .project-card:not(:hover) {
-        .project-card-header {
-            animation: slideBottomCard 1s ease forwards!important;
-            height: 100%;
-        }
-    
-        .project-card-title {
-            animation: slideLeft 1s ease forwards!important;
-        }
-    
-        .project-card-text {
-            animation: slideLeft 1s ease forwards!important;
-        
-        }
-    
-        .project-button{
-            display: none;
-            animation: slideLeft 1s ease forwards!important;
-        }
-    }
-
-    .project-card-title {
-        text-align: justify!important;
-    }
-}
